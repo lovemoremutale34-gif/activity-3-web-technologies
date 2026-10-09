@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My First Web Page</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>My Personal Website</h1>
+            <p>Welcome to my personal website</p>
+        </header>
+
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#hobbies">My Hobbies</a>
+            <a href="#learning">Learning Plan</a>
+            <a href="#photos">My Photos</a>
+            <a href="#media">My Media</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#skills">My Skills</a>
+        </nav>
+        <button id="theme-toggle" type="button">
+            Switch to Dark Mode
+        </button>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    i am a computer science student at MULUNGUSHI UNIVERSITY with an interest in web development and programming. I enjoy learning how websites and computer systems work. I am studying web technologies to improve my understanding of HTML,CSS and other web development skills. My goal is to become a hihgly skilled developer and use technology to create useful and positve solution to real-world problems.
+                </p>
+                <button id="read-more-btn" type="button">
+                    Read More
+                </button>
+
+                <p id="extra-info" hidden>
+                    I am continuing to develop my skills in web technologies,programming,and problem-solving.My goal is to gain practical experience by building useful and interactive websites.
+                </p>
+                </section>
+            <section id="hobbies">
+                <h2>My Hobbies</h2>
+                <ul>
+                    <li>Playing football</li>
+                    <li>Reading books</li>
+                    <li>Travelling</li>
+                    <li>Listening to music</li>
+                </ul>    
+            </section>
+            </section>
+            <section id="learning">
+                <h2>My Learning Plan</h2>
+                <p>Steps i will take to improve my web development skills:</p>
+                <ol>
+                    <li>Practice HTML regularly and build simple webpages.</li>
+                    <li>Learn CSS and practice styling differnt webpage layouts.</li>
+                    <li>Build small projects to improve my web development skills.</li>
+                </ol>
+                <table>
+                    <caption>My Weekly Web Learning Plan</caption>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML</td>
+                        <td>Practice HTML structure</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS</td>
+                        <td>Style a webpage</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Web forms</td>
+                        <td>Create a simple contact form</td>
+                    </tr>
+                </table>
+            </section>
+            
+            <section id="photos">
+                <h2>My Photos</h2>
+            <figure>
+                <img src="images/photo1.JPG" alt=" a photo of me lifting a trophy after winning MUSU premier league">
+
+                <figcaption>lifting a trophy</figcaption>
+            </figure>
+<figure>
+    <img src="images/photo2.JPG" alt="a photo of my self">
+    <figcaption>a photo of my self</figcaption>
+</figure>
+<figure>
+    <img src="images/photo3.JPG" alt="a photo of my favourite sport">
+    <figcaption>my favourite sport</figcaption>
+</figure>
+<figure>
+    <img src="images/photo4.JPG" alt="a photo of my favourite car">
+    <figcaption>my favourite car</figcaption>
+</figure>
+            </section>  
+            
+            <section id="media">
+                <h2>My media</h2>
+                <h3>My Introduction Video</h3>
+
+                <video controls>
+                    <source src="videos/intro-compressed.mp4" type="video/mp4">
+                </video>
+                <p>In this video I introduce myself, year of study, institution, my programme, and the web development skill i hope to improve</p>
+                <h3>My Audio</h3>
+
+                <audio controls>
+                    <source src="videos/voice.mp3" type="audio/mpeg">
+                </audio>
+
+                <p>this recording describes one of my hobbies.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Browser demonstration only - no message is sent.</p>
+                <form id="contact-form" action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <label for="topic">Topic:</label>
+                    <input type="text" id="topic" name="topic">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <p id="form-feedback" aria-live="polite"></p>
+                    <div id="form-feedback"></div>
+                    <div id="form-preview" hidden></div>
+                    <button type="submit">Submit</button>
+                </form>    
+            </section>
+            <section id="skills">
+                <h2>My skills</h2>
+                <div class="project-search">
+                    <label for="project-search">Search projects or skills:</label>
+                    <input
+                        type="text"
+                        id="project-search"
+                        placeholder="Type to search..."
+                    >
+                    <button type="button" id="reset-search">Reset</button>
+                    <p id="search-message" aria-live="polite"></p>    
+                </div>
+                <ul>
+                    <li>HTML - creating webpage structure</li>
+                    <li>CSS - styling webpages</li>
+                    <li>JavaScript - learning to make webpages interactive</li>
+                </ul>
+            </section>
+    
+        </main>    
+
+        <footer
+            <p>&copy; 2026 My Personal Website</p>
+        </footer>
+                    
+    </body>
+</html>
